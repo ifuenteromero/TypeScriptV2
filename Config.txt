@@ -5,3 +5,8 @@ npm i -g typescript
 para ver la versión instalada
 
 tsc -v
+
+Para transpilar un archivo .ts en un .js
+tsc index.ts
+
+En principio las let las convierte en vars
