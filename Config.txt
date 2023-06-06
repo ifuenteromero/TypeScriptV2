@@ -1,0 +1,7 @@
+Instalar typescript 
+
+npm i -g typescript
+
+para ver la versión instalada
+
+tsc -v
