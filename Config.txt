@@ -10,3 +10,10 @@ Para transpilar un archivo .ts en un .js
 tsc index.ts
 
 En principio las let las convierte en vars
+
+//// 
+Para crear un archivo de configuración para el compilador de typescript
+tsc --init
+
+par compilar todos los archivos de typescript 
+tsc 
