@@ -1,5 +1,6 @@
-let age: number = 20;
-if (age < 50)
-    age += 10;
-console.log('hola')
+const enum Size { Small = 3, Medium, Large }
+let mySize: Size;
+mySize = Size.Large
+console.log(mySize);
+
 
