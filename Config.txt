@@ -17,3 +17,10 @@ tsc --init
 
 par compilar todos los archivos de typescript 
 tsc 
+
+para ejecutar el js
+node dist/CreatingClasse.js
+
+para hacer los dos comandos a la vez
+tsc && node dist/CreatingClasses.js
+
