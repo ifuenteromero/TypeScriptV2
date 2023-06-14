@@ -49,7 +49,14 @@ console.log({ account });
 console.log(account.balance);
 // account.balance = 2;
 
+class SeatAssignment {
+    // index signature string
+    [seatNumber: string]: string;
+}
 
+let seats = new SeatAssignment;
+seats.A1 = 'Mosh';
+seats.A2 = 'Irene'
 
 
 
