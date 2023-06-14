@@ -20,9 +20,18 @@ class Account {
         this._balance += amount;
     }
 
-    getBalance(): number {
-        return this._balance;
+    // getBalance(): number {
+    //     return this._balance;
+    // }
+
+    get balance(): number {
+        return this._balance
     }
+
+    // set balance(value: number) {
+    //     if (value <= 0) throw new Error('invalid value');
+    //     this._balance = value
+    // }
 
     private calculateTax(): void {
         console.log('hola');
@@ -35,8 +44,12 @@ account.deposit(15_000);
 console.log(typeof account);
 console.log(account instanceof Account);
 // console.log(account.balance)
-console.log(account.getBalance());
+// console.log(account.getBalance());
 console.log({ account });
+console.log(account.balance);
+// account.balance = 2;
+
+
 
 
 
