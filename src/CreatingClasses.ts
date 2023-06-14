@@ -1,13 +1,17 @@
 class Account {
-    readonly id: number;
-    owner: string;
-    private _balance: number;
+    // readonly id: number;
+    // owner: string;
+    // private _balance: number;
     nickname?: string;
 
-    constructor(id: number, owner: string, balance: number) {
-        this.id = id;
-        this.owner = owner;
-        this._balance = balance;
+    constructor(
+        public id: number,
+        public owner: string,
+        private _balance: number
+    ) {
+        // this.id = id;
+        // this.owner = owner;
+        // this._balance = balance;
     }
 
     deposit(amount: number): void {
