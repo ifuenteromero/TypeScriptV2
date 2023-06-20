@@ -5,7 +5,7 @@ class Person {
         this.lastName = lastName;
     }
     get fullName() {
-        return `${this.lastName} ${this.firstName}`;
+        return `${this.firstName} ${this.lastName}`;
     }
     walk() {
         console.log('walk');

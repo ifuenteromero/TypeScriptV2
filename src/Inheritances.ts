@@ -46,7 +46,7 @@ const teacher = new Teacher('Irene', 'Fuente');
 console.log({ teacherFullName: teacher.fullName });
 
 class Principal extends Person {
-    get fullName(): string {
+    override get fullName(): string {
         return `Principal ${super.fullName}`
     }
 }
