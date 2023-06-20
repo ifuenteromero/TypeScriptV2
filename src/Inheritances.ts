@@ -32,3 +32,17 @@ console.log(student.studentId);
 console.log(student.takeTest());
 
 
+// queremos crear una nueva clase Teacher que herede de la clase Person
+// queremos sobreescribir el método fullName de tal manera que antes de unir el nombre y apellidos ponga la palabra Professor
+
+class Teacher extends Person {
+
+    override  get fullName(): string {
+        return `Professor ${super.fullName}`
+    }
+}
+
+const teacher = new Teacher('Irene', 'Fuente');
+console.log({ teacherFullName: teacher.fullName });
+
+
