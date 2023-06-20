@@ -45,4 +45,27 @@ class Teacher extends Person {
 const teacher = new Teacher('Irene', 'Fuente');
 console.log({ teacherFullName: teacher.fullName });
 
+class Principal extends Person {
+    get fullName(): string {
+        return `Principal ${super.fullName}`
+    }
+}
 
+// Polimorfismo. Las clases pueden actuar de forma polimórfica. Si creamos una función para imprimir los nombres completos de las personas
+// esta funciona de forma polimófica y usa el principio open Closed de la programación orientada a objetos, que dice que las clases deben
+// estar abiertas a extensión y cerradas a modificación. Este es un principio que debe intentar ser implementado aunque en la práctica no siempre
+// se puede llevar a cabo. los métodos get fullname tiene la palabra overrride y esto significa que si se modifica el fullname de la clase Person
+// no se verá afectado en los que sobreescriben en las clases Professor y Principal
+
+
+const printNames = (people: Person[]) => {
+    for (const person of people) {
+        console.log(person.fullName)
+    }
+}
+
+printNames([
+    new Student(1, 'John', 'Smith'),
+    new Teacher('Mosh', 'Hamedani'),
+    new Principal('Mary', 'James')
+])
