@@ -1,0 +1,1 @@
+{"version":3,"file":"3-UnionTypes.js","sourceRoot":"","sources":["../../src/Review/3-UnionTypes.ts"],"names":[],"mappings":";AAAA,MAAM,OAAO,GAAG,CAAC,MAAuB,EAAU,EAAE;IACnD,MAAM,gBAAgB,GAAG,OAAO,CAAC;IAOjC,IAAI,OAAO,MAAM,KAAK,QAAQ;QAC8B,OAAO,CACjE,MAAM,GAAG,gBAAgB,CACzB,CAAC;IAEH,OAAO,UAAU,CAAC,MAAM,CAAC,GAAG,gBAAgB,CAAC;AAC9C,CAAC,CAAC"}
