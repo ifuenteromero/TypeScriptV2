@@ -14,4 +14,6 @@ console.log({ ride3: Ride2.activeRides });
 let ride4 = new Ride2();
 ride4.start();
 console.log({ ride4: Ride2.activeRides });
+Ride2.activeRides = 10;
+console.log({ activeRides: Ride2.activeRides });
 //# sourceMappingURL=10-StaticMembers.js.map
