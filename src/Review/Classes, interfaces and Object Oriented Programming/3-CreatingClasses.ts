@@ -10,8 +10,13 @@ class Account2 {
 		private _balance: number
 	) {}
 
-	getBalance(): number {
+	get balance(): number {
 		return this._balance;
+	}
+
+	set balance(amount: number) {
+		if (amount < 0) throw new Error('Invalid amount');
+		this._balance = amount;
 	}
 
 	deposit(amount: number): void {
@@ -43,3 +48,17 @@ console.log({ isAnInstance: account2 instanceof Account2 });
 
 // Parameters properties
 // A shorthand for defining properties in a constructor
+
+// Getters and setters
+// hasta ahora para acceder al balance hemos ccreado getBalance, no sería
+// console.log({ balance: account3.balance }); más sencillo? Para ello creamos un getter
+
+console.log({ balance: account2.balance });
+
+// Así seguimos sin poder modificar el balance de esta manera
+// account2.balance = -10; // Cannot assign to 'balance' because it is a read-only property.
+
+// Si quisieramos hacerlo, validando que el balance no sea negativo, creamos un setter
+// account2.balance = -10; // Invalid amount
+account2.balance = 10_000;
+console.log({ balance: account2.balance });
