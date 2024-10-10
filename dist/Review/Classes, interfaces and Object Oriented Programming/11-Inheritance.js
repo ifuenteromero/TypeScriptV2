@@ -33,4 +33,20 @@ class Teacher2 extends Person2 {
 }
 const teacher2 = new Teacher2('Irene', 'Fuente');
 console.log(teacher2.fullName);
+const printNames2 = (people) => {
+    for (const person of people) {
+        console.log(person.fullName);
+    }
+};
+class Principal2 extends Person2 {
+    get fullName() {
+        return `Principal ${super.fullName}`;
+    }
+}
+const people2 = [
+    new Student2(1, 'Irene', 'Fuente'),
+    new Teacher2('Irene', 'Fuente'),
+    new Principal2('Mosh', 'Hamedani'),
+];
+printNames2(people2);
 //# sourceMappingURL=11-Inheritance.js.map
