@@ -17,3 +17,12 @@ class Account2 {
 		this.balance += amount;
 	}
 }
+
+let account2 = new Account2(1, 'Irene', 6_000);
+account2.deposit(2_200);
+
+console.log({ account2 });
+console.log(typeof account2);
+console.log({ isAnInstance: account2 instanceof Account2 });
+
+// tsc && node dist/Review/Classes\,\ interfaces\ and\ Object\ Oriented\ Programming/3-CreatingClasses.js
