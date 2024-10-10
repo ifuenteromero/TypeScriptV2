@@ -2,16 +2,13 @@
 are often used interchangeably */
 
 class Account2 {
-	readonly id: number;
-	owner: string;
-	private _balance: number;
 	nickname?: string;
 
-	constructor(id: number, owner: string, balance: number) {
-		this.id = id;
-		this.owner = owner;
-		this._balance = balance;
-	}
+	constructor(
+		readonly id: number,
+		public owner: string,
+		private _balance: number
+	) {}
 
 	getBalance(): number {
 		return this._balance;
@@ -43,3 +40,6 @@ console.log({ isAnInstance: account2 instanceof Account2 });
 // account2.balance; // Property 'balance' is private and only accessible within class 'Account2'.
 // creamos getBalance
 // console.log(account2.getBalance());
+
+// Parameters properties
+// A shorthand for defining properties in a constructor
