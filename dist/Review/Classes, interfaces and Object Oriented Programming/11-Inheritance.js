@@ -26,4 +26,11 @@ student2.lastName;
 student2.fullName;
 student2.walk();
 student2.takeTest();
+class Teacher2 extends Person2 {
+    get fullName() {
+        return `Prof. ${super.fullName}`;
+    }
+}
+const teacher2 = new Teacher2('Irene', 'Fuente');
+console.log(teacher2.fullName);
 //# sourceMappingURL=11-Inheritance.js.map

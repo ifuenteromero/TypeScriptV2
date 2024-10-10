@@ -40,3 +40,17 @@ student2.lastName; // Fuente
 student2.fullName; // Irene Fuente
 student2.walk(); // { walk: 'Walking' }
 student2.takeTest(); // { takeTest: 'Taking test' }
+
+// Method overriding
+
+class Teacher2 extends Person2 {
+	override get fullName(): string {
+		return `Prof. ${super.fullName}`;
+	}
+}
+
+// Activamos ts(4114) noImplicitOverride
+
+const teacher2 = new Teacher2('Irene', 'Fuente');
+
+console.log(teacher2.fullName); // Prof. Irene Fuente
