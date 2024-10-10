@@ -3,12 +3,15 @@ class Account2 {
     constructor(id, owner, balance) {
         this.id = id;
         this.owner = owner;
-        this.balance = balance;
+        this._balance = balance;
+    }
+    getBalance() {
+        return this._balance;
     }
     deposit(amount) {
         if (amount <= 0)
             throw new Error('Invalid amount');
-        this.balance += amount;
+        this._balance += amount;
     }
 }
 let account2 = new Account2(1, 'Irene', 6000);
