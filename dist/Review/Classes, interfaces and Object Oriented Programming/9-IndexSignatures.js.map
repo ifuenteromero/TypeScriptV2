@@ -1,10 +1,1 @@
-{
-	"version": 3,
-	"file": "9-IndexSignatures.js",
-	"sourceRoot": "",
-	"sources": [
-		"../../../src/Review/Classes, interfaces and Object Oriented Programming/9-IndexSignatures.ts"
-	],
-	"names": [],
-	"mappings": ";AAUA,MAAM,aAAa;CAKlB;AAED,IAAI,MAAM,GAAG,IAAI,aAAa,EAAE,CAAC;AACjC,MAAM,CAAC,EAAE,GAAG,OAAO,CAAC;AACpB,MAAM,CAAC,EAAE,GAAG,QAAQ,CAAC"
-}
+{"version":3,"file":"9-IndexSignatures.js","sourceRoot":"","sources":["../../../src/Review/Classes, interfaces and Object Oriented Programming/9-IndexSignatures.ts"],"names":[],"mappings":";AAUA,MAAM,aAAa;CAKlB;AAED,IAAI,MAAM,GAAG,IAAI,aAAa,EAAE,CAAC;AACjC,MAAM,CAAC,EAAE,GAAG,OAAO,CAAC;AACpB,MAAM,CAAC,EAAE,GAAG,QAAQ,CAAC"}
