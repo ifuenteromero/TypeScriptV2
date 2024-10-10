@@ -16,4 +16,4 @@ function throwError(message: string): never {
 // processEvents();
 throwError('This is an error!');
 
-console.log('This will never be reached!');
+// console.log('This will never be reached!');
