@@ -83,3 +83,9 @@ const people2 = [
 ];
 
 printNames2(people2); // Irene Fuente, Prof. Irene Fuente
+
+// private vs protected members
+// private members are accessible only within the class that defines them.
+// protected members are accessible within the class that defines them and within the classes that inherit from them.
+// los miembros privados son accesibles solo dentro de la clase que los define.
+// los miembros protegidos son accesibles dentro de la clase que los define y dentro de las clases que heredan de ellos.
